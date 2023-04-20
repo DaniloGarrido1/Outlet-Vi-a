@@ -1,0 +1,365 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+/*estilo iconos del header */
+
+.ico1 {
+    height: 35px;
+    /*altura*/
+    width: 35px;
+    /*ancho */
+    padding: 0px 10px 0px 0px;
+}
+
+.ico2 {
+    height: 35px;
+    width: 35px;
+    padding: 0px 10px 0px 0px;
+}
+
+.ico3 {
+    height: 35px;
+    width: 35px;
+    padding: 0px 10px 0px 0px;
+}
+
+.cabezon {
+    display: block;
+    height: auto;
+}
+
+.encabezado {
+    background: #F7F7F7;
+    /*color de fondo*/
+    background-size: cover;
+    /*que cubra todo*/
+    height: 76px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    /*formato del grid*/
+    align-content: baseline;
+    text-align: center;
+    /* alinear el texto al centro*/
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+
+
+}
+
+.encabezado img {
+    padding-left: 30px;
+    /* espacio a la izquierda de la imagen*/
+}
+
+
+/* configuracion de la lista del encabezado*/
+.encabezado li {
+    color: white;
+    margin-left: center;
+    display: inline;
+    padding-left: 20px; /*espacio a la izquierda*/
+    padding-right: 20px; /*espacio a la derecha*/
+    font-size: 20px; /*tamaño de letra */
+    font-family: sans-serif; /*fuente de la letra*/
+    font-weight: 800;
+
+
+}
+
+.encabezado a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+
+}
+
+
+/** configuracion del slider*/
+#slider {
+    font-family: sans-serif;
+    margin: auto;
+    background-color: white;
+    max-width: 800px;
+    width: 100%;
+    padding: 30px;
+    box-sizing: border-box;
+}
+
+#slider>ul,
+li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#slider>ul.slider {
+    position: relative;
+    max-width: 800px;
+    width: 100%;
+    height: 300px;
+}
+
+
+
+#slider>ul.slider li {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    opacity: 0;
+    width: 100%;
+    height: inherit;
+    transition: opacity .5s;
+    background: #fff;
+}
+
+#slider>ul.slider li img {
+    width: 100%;
+    height: 300px;
+    object-fit: fill;
+}
+
+#slider>ul.slider li:first-child {
+    opacity: 1;
+    /*Mostramos el primer <li>*/
+}
+
+#slider>ul.slider li:target {
+    opacity: 1;
+    /*Mostramos el <li> del enlace que pulsemos*/
+}
+
+#slider>.menu {
+    text-align: center;
+    margin: 20px;
+}
+
+#slider>.menu li {
+    display: inline-block;
+    text-align: center;
+}
+
+
+
+/**de aqui para abajo animaciones para las imagenes*/
+
+.item1 {
+
+    transition: 0.5s; /*transicion del zoom*/
+    transition: all .4s ease-in-out;
+
+}
+
+.item1:hover {
+    transform: scale(1.1);/* escala del zoom*/
+}
+
+.item2 {
+
+    transition: 0.5s;
+    transition: all .4 ease-in-out;
+
+}
+
+.item2:hover {
+    transform: scale(1.1);
+}
+
+.item3 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+
+}
+
+.item3:hover {
+    transform: scale(1.1);
+}
+
+.item4 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.item4:hover {
+
+    transform: scale(1.1);
+}
+
+.gridprincipal {
+    background-color: #F7F7F7;
+}
+
+.grid1 {
+
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Creamos 4 columnas con el mismo ancho */
+    grid-template-rows: repeat(2, 1fr);
+    /* Creamos 2 filas con el mismo alto */
+    gap: 0%;
+    /* Espacio entre las imágenes */
+
+
+}
+
+.grid2 {
+    margin-left: 5%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Creamos 4 columnas con el mismo ancho */
+    grid-template-rows: repeat(2, 1fr);
+    /* Creamos 2 filas con el mismo alto */
+    gap: 0%;
+    /* Espacio entre las imágenes */
+
+}
+
+
+.it1 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.it1:hover {
+
+    transform: scale(1.1);
+}
+
+.it2 {
+
+    transition: 0.5s;
+    transition: all .24
+}
+
+.it2:hover {
+
+    transform: scale(1.1);
+}
+
+.it3 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.it3:hover {
+
+    transform: scale(1.1);
+}
+
+.it4 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.it4:hover {
+
+    transform: scale(1.1);
+}
+
+.it5 {
+
+    transition: 0.5s;
+    transition: all 4s ease-in-out;
+}
+
+.it5:hover {
+
+    transform: scale(1.1);
+}
+
+.it6 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.it6:hover {
+
+    transform: scale(1.1);
+}
+
+.it7 {
+
+    transition: 0.5s;
+    transition: all .4s ease-in-out;
+}
+
+.it7:hover {
+
+    transform: scale(1.1);
+}
+
+
+
+
+.tienda {
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+.panorama {
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+.ubicasao {
+    font-family: sans-serif;
+    padding-left: 50px;
+}
+
+
+
+
+/* Creamos el grid para el footer */
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* Creamos 3 columnas con el mismo ancho */
+    background-color: #3A328A;
+    /* Color de fondo del footer */
+    color: white;
+    /* Color del texto del footer */
+    padding: 20px;
+    /* Añadimos un padding para que no quede pegado al borde de la página */
+    gap: 160px;
+    /* Espacio entre las columnas */
+    padding-left: 5%;
+}
+
+/* Estilizamos el título de cada columna */
+.footer h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+/* Estilizamos el texto de cada columna */
+.footer p {
+    margin: 0;
+}
+
+/* Estilizamos los subtítulos */
+.footer p.subtitulo {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.copy {
+    text-align: center;
+    font-size: bolder;
+}
+
+.final {
+    width: 100%;
+    padding-left: 120%;
+
+}
